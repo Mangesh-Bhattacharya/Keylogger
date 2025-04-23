@@ -26,7 +26,7 @@ This keylogger is a Python script that records keystrokes, mouse movements, clic
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/username/Keylogger.git](https://github.com/Mangesh-Bhattacharya/Keylogger.git)
+    git clone [https://github.com/Mangesh-Bhattacharya/Keylogger.git](https://github.com/Mangesh-Bhattacharya/Keylogger.git)
     cd Keylogger
     ```
 
