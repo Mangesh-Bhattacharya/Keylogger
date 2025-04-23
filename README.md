@@ -30,7 +30,7 @@ This keylogger is a Python script that records keystrokes, mouse movements, clic
     cd Keylogger
     ```
 
-2.  **Install dependencies:** The script attempts to install missing modules, but it's recommended to create a virtual environment:
+2.  **Install dependencies:**  The script attempts to install missing modules, but it's recommended to create a virtual environment:
 
     ```bash
     python3 -m venv venv
@@ -47,15 +47,15 @@ This keylogger is a Python script that records keystrokes, mouse movements, clic
     * **Do not use your main email password directly for security reasons.**
     * If using Gmail, you might need to enable [less secure app access](https://support.google.com/accounts/answer/6010255) (not recommended) or use an App Password.  Note that Google is phasing out "less secure app access."
 
-    ```python
+    ```
     KEYLOGGER_EMAIL = "your_email@example.com"  # Replace this!
     KEYLOGGER_PASSWORD = "your_app_password"      # Replace this!
     ```
 
 4.   **Set Reporting Interval:**
-    * The `SEND_REPORT_EVERY` variable in `keylogger.py` controls how often the keylogger sends reports (in seconds). Adjust this as needed.
+     The `SEND_REPORT_EVERY` variable in `keylogger.py` controls how often the keylogger sends reports (in seconds). Adjust this as needed.
 
-    ```python
+    ```
     SEND_REPORT_EVERY = 60  # Time interval in seconds
     ```
 
@@ -73,14 +73,14 @@ This keylogger is a Python script that records keystrokes, mouse movements, clic
 
 * **Legal and Ethical Use:** This keylogger must only be used on systems you own or have explicit permission to monitor. Unauthorized use is illegal and unethical.
 * **Email Security:** Storing your email password (or even an app password) in a script has security implications. If you intend to use this long-term, consider using more secure methods for handling credentials, such as environment variables or configuration files.
-* **Antivirus Detection:** Antivirus software can detect keyloggers. If you are using this for legitimate purposes, you may need to add an exception to your antivirus.
+* **Antivirus Detection:** Antivirus software can detect keyloggers. You may need to add an exception to your antivirus if you use this for legitimate purposes.
 * **Resource Usage:** Be mindful of the keylogger's impact on system resources, especially if you frequently capture screenshots or record audio.
 * **Data Storage:** The script, as provided, does not store logs locally before emailing them. For long-term logging, you should add local storage.
-* **Gmail App Password:** For enhanced security, it is highly recommended that you use a Gmail App Password instead of your regular Gmail password. See the Setup section for instructions.
+* **Gmail App Password:** For enhanced security, using a Gmail App Password instead of your regular Gmail password is highly recommended. See the Setup section for instructions.
 
 ## Dependencies
 
-* Python 3
+* `Python 3`
 * `pynput`
 * `pyscreenshot`
 * `sounddevice`
