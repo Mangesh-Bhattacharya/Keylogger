@@ -34,31 +34,34 @@ This keylogger is a Python script that records keystrokes, mouse movements, clic
 
     ```bash
     python3 -m venv venv
+    ```
+    ```
     source venv/bin/activate  # On Linux/macOS
     # venv\Scripts\activate   # On Windows
+    ```
+    ```
     pip install -r requirements.txt
     ```
 
-3.  **Configure email settings:**
+4.  **Configure email settings:**
 
     * Open the `keylogger.py` file.
     * Replace `"YOUR_USERNAME"` with your email address.
     * Replace `"YOUR_PASSWORD"` with your email password or, preferably, an [App Password](https://support.google.com/accounts/answer/185833?hl=en) if using Gmail.
     * **Do not use your main email password directly for security reasons.**
     * If using Gmail, you might need to enable [less secure app access](https://support.google.com/accounts/answer/6010255) (not recommended) or use an App Password.  Note that Google is phasing out "less secure app access."
-
+    
     ```
     KEYLOGGER_EMAIL = "your_email@example.com"  # Replace this!
     KEYLOGGER_PASSWORD = "your_app_password"      # Replace this!
     ```
 
-4.   **Set Reporting Interval:**
+5.   **Set Reporting Interval:**
      The `SEND_REPORT_EVERY` variable in `keylogger.py` controls how often the keylogger sends reports (in seconds). Adjust this as needed.
-
     
-    ```
-    SEND_REPORT_EVERY = 60  # Time interval in seconds
-    ```
+        ```
+        SEND_REPORT_EVERY = 60  # Time interval in seconds
+        ```
 
 ## Usage
 
