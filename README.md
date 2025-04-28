@@ -55,6 +55,7 @@ This keylogger is a Python script that records keystrokes, mouse movements, clic
 4.   **Set Reporting Interval:**
      The `SEND_REPORT_EVERY` variable in `keylogger.py` controls how often the keylogger sends reports (in seconds). Adjust this as needed.
 
+    
     ```
     SEND_REPORT_EVERY = 60  # Time interval in seconds
     ```
